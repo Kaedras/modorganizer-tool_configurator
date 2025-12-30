@@ -12,10 +12,30 @@
       "name": "vs2022-windows"
     },
     {
+      "cacheVariables": {
+        "VCPKG_MANIFEST_FEATURES": {
+          "type": "STRING",
+          "value": "standalone"
+        }
+      },
+      "inherits": "vs2022-windows",
+      "name": "vs2022-windows-standalone"
+    },
+    {
       "inherits": ["vcpkg"],
       "binaryDir": "${sourceDir}/build",
       "generator": "Ninja Multi-Config",
       "name": "linux"
+    },
+    {
+      "cacheVariables": {
+        "VCPKG_MANIFEST_FEATURES": {
+          "type": "STRING",
+          "value": "standalone"
+        }
+      },
+      "inherits": "linux",
+      "name": "linux-standalone"
     }
   ],
   "buildPresets": [
