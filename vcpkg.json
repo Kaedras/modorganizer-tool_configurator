@@ -2,14 +2,16 @@
   "features": {
     "standalone": {
       "description": "Build Standalone.",
-      "dependencies": ["mo2-cmake"]
+      "dependencies": [
+        "mo2-cmake"
+      ]
     }
   },
   "vcpkg-configuration": {
     "default-registry": {
       "kind": "git",
-      "repository": "https://github.com/Kaedras/vcpkg-registry",
-      "baseline": "a4719a48c656122d41c28ef36662ba5ec503b821"
+      "baseline": "e25e30e8233b5d98f0f85a5e7a310274ba5acc69",
+      "repository": "https://github.com/Kaedras/vcpkg-registry"
     }
   }
 }
